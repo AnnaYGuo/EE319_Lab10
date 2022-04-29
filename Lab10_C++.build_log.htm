@@ -1,0 +1,117 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Anna Guo, UT Austin, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Keil_v5\EE319KwareSpring2022\Lab10_C++\Lab10_C++.uvprojx
+Project File Date:  04/28/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Lab 10'
+compiling slice.cpp...
+slice.cpp(16): error:  #20: identifier "station" is undefined
+  	while(station == SLICING){
+slice.cpp(17): error:  #20: identifier "location" is undefined
+  		if(location[1][0].exist){
+slice.cpp(21): error:  #20: identifier "cursor" is undefined
+  			if(cursor.pressed == 1 && cursor.clicked == 0){
+slice.cpp(27): error:  #20: identifier "up_btn" is undefined
+  			if(up_btn && !location[1][0].cut[cut]){
+slice.cpp(30): error:  #20: identifier "down_btn" is undefined
+  				while(!down_btn){
+slice.cpp(39): error:  #20: identifier "button" is undefined
+  			if(cursor.pressed && touch(button)){
+slice.cpp(39): error:  #165: too few arguments in function call
+  			if(cursor.pressed && touch(button)){
+slice.cpp(40): error:  #20: identifier "ticket" is undefined
+  				if(ticket){
+slice.cpp(43): error:  #20: identifier "make" is undefined
+  							location[0][index] = make;
+slice.cpp(14): warning:  #550-D: variable "emptycut"  was set but never used
+  	int emptycut = 1;
+slice.cpp: 1 warning, 9 errors
+compiling globals.c...
+structures.h(14): error:  #20: identifier "Point" is undefined
+  	Point BL;
+structures.h(15): error:  #20: identifier "Point" is undefined
+  	Point TR;
+structures.h(20): error:  #20: identifier "Point" is undefined
+  	Point position;
+structures.h(26): error:  #20: identifier "bool" is undefined
+  	bool exist;
+structures.h(30): error:  #20: identifier "Topping" is undefined
+  	Topping toppings[24];
+structures.h(33): error:  #20: identifier "Pizza" is undefined
+  Pizza request;
+structures.h(58): error:  #20: identifier "Point" is undefined
+  int touch(Point cursor, Box btn){
+structures.h(58): error:  #20: identifier "Box" is undefined
+  int touch(Point cursor, Box btn){
+structures.h(59): error:  #20: identifier "true" is undefined
+  	if(cursor.x >= btn.BL.x && cursor.y >= btn.BL.y && cursor.x <= btn.TR.x && cursor.y <= btn.TR.y){ return true; }
+structures.h(60): error:  #20: identifier "false" is undefined
+  	return false;
+globals.c(34): warning:  #1-D: last line of file ends without a newline
+  extern int buttonnow;
+globals.c: 1 warning, 10 errors
+compiling topping.cpp...
+topping.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+topping.cpp(23): error:  #20: identifier "make" is undefined
+  	if(!make.exist){
+topping.cpp(25): error:  #20: identifier "buttonpast" is undefined
+  		while(buttonpast <= buttonnow){
+topping.cpp(25): error:  #20: identifier "buttonnow" is undefined
+  		while(buttonpast <= buttonnow){
+topping.cpp(26): error:  #20: identifier "station" is undefined
+  			if(station != BUILD) { return; }
+topping.cpp(44): error:  #20: identifier "station" is undefined
+  	while(station == BUILD){
+topping.cpp: 1 warning, 5 errors
+".\Lab10_C++.axf" - 24 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Lab_10
+  C:\Users\Anna Guo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\Anna Guo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
